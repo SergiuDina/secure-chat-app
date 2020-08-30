@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\DataContext\\DataContext.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\DataContext\\DataContext.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\DataContext\\DataContext.csproj",
+        "projectName": "DataContext",
+        "projectPath": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\DataContext\\DataContext.csproj",
+        "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\DataContext\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\Entities\\Entities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\Gigabyte\\Proiecte\\ChatApp\\Entities\\Entities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
