@@ -1,0 +1,115 @@
+﻿<Window x:Class="Client.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="ChatRoom" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Border CornerRadius="10" HorizontalAlignment="Left" Width="800" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <StackPanel>
+                <TextBox x:Name="messageTextBox" 
+                         HorizontalAlignment="Left" 
+                         Height="33" Margin="47,347,0,0" 
+                         TextWrapping="Wrap" 
+                         VerticalAlignment="Top" 
+                         Width="473"
+                         FontFamily="Helvetica"
+                         FontWeight="Light"
+                         FontSize="20"
+                         Foreground="White" 
+                         Background="Transparent"
+                         BorderThickness="2"
+                         BorderBrush="White" Text="Write a message"
+                         IsMouseDirectlyOverChanged="messageTextBox_IsMouseDirectlyOverChanged"
+                         KeyUp="messageTextBox_KeyUp"
+                         />
+            </StackPanel>
+
+            <StackPanel>
+                <ListBox x:Name="clientsListBox" 
+                         HorizontalAlignment="Left" 
+                         Height="241" Margin="562,64,0,0" 
+                         VerticalAlignment="Top" Width="195"  
+                         Background="Transparent"
+                         Foreground="White"
+                         BorderThickness="2"
+                         FontFamily="Helvetica"
+                         BorderBrush="White"
+                         FontSize="16">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="White"/>
+
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+                
+            </StackPanel>
+
+            <StackPanel>
+                <ListBox x:Name="messagesListBox" 
+                         HorizontalAlignment="Left" 
+                         Height="241" Margin="47,64,0,0" 
+                         VerticalAlignment="Top" 
+                         Width="473"
+                         Background="Transparent"
+                         Foreground="White"
+                         BorderThickness="2"
+                         FontFamily="Helvetica"
+                         BorderBrush="White"
+                         FontSize="16"
+                         >
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Style.Triggers>
+                                <Trigger Property="HasContent" Value="True">
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Opacity" Value="0.7"/>
+                                    <Setter Property="Foreground" Value="DeepSkyBlue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel>
+                <iconPacks:PackIconMaterial Kind="Account"
+                                     VerticalAlignment="Stretch"
+                                     HorizontalAlignment="Stretch"
+                                     Foreground="White" 
+                                     Height="30" 
+                                     Margin="52,22,711,0" Width="Auto"/>
+                <Label x:Name="usernameLabel" 
+                       Content="" 
+                       HorizontalAlignment="Left" 
+                       Height="42" 
+                       Margin="83,-32,0,0" 
+                       VerticalAlignment="Top" 
+                       Width="297"
+                       FontFamily="Helvetica"
+                       Foreground="White"
+                       FontSize="20"/>
+            </StackPanel>
+
+        </Grid>
+
+        <Button x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Height="33" Margin="604,347,0,0" VerticalAlignment="Top" Width="115" FontSize="22" Click="sendButton_Click"/>
+    </Grid>
+</Window>
