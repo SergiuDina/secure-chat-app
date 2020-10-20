@@ -20,11 +20,11 @@ After you run the application:
 
 In the application folder, go to Client\bin\Debug and open Client.exe to open another client
 
-Now you can Register two new clients, connect to the Chat Room and start sending messages between them.
+Now you can Login or Register two new clients, connect to the Chat Room and start sending messages between them.
 
 ## App Design
 
-The design for the client was created using WPF
+The design for the client user interface was created using WPF
 
 Here is the Login Page:
 
