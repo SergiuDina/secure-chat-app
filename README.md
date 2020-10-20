@@ -6,7 +6,7 @@ In order to create the app, I used different .NET frameworks, such as WCF, WPF a
 
 The communication between server and client is of type TCP full duplex.
 
-The communication is secured by using AES (Advanced Enryption Standard). For the key exchange between clients I used Diffie-Hellman with elliptic curves, more precisely Curve25519.
+The communication is secured using AES (Advanced Enryption Standard). For the key exchange between clients I used Diffie-Hellman with elliptic curves, more precisely Curve25519.
 
 ## Usage
 
